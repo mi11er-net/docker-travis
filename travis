@@ -1,0 +1,4 @@
+#!/bin/sh
+
+# Simple Command to run travis against the current directory
+docker run --rm -v $(PWD):/work mi11er/travis:latest "$@"
